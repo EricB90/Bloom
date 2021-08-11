@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+/* font-family: 'Butterfly Kids', cursive;
+font-family: 'Rubik', sans-serif; */
+
+:root {
+    --prim: #26292e;
+    --section1: #e7718b;
+    --section2: #f4f4f6;
+    --section3: #ffffff;
+    --buttontop: #5c5a5b;
+    --buttonbottom: #242827;
+    --productborder: #b9c0d0;
+    --lighttext: #ffffff;
+    --midtext: #6c6b6b;
+    --darktext: #1a1a1a;
+    --logotext: 'Butterfly Kids', cursive;
+    --maintext: 'Rubik', sans-serif;
+}
+
+/* generic rules */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.inner {
+    margin: 0 250px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
+/* close generic */
+
+/* header rules */
+.header {
+    height: 9vh;
+    background-color: var(--prim);
+}
+
+.header .inner {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    margin: 0;
+    padding: 0;
+    font-size: calc(22px + (40 - 22) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 200;
+    font-family: var(--logotext);
+    text-transform: capitalize;
+    color: var(--lighttext);
+    display: inline-block;
+}
+
+.header .social-list {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.so-list-item {
+    display: inline;
+}
+
+.social-icon {
+    padding-left: 8px;
+    height: 2vw;
+    width: auto;
+}
+/* close header */
+
+/* main rules */
+.main {
+    padding-bottom: 30px;
+    font-family: var(--maintext);
+}
+.section1 {
+    height: 55vh;
+    color: var(--lighttext);
+    background-color: var(--section1);
+}
+
+.section1 .inner {
+    position: relative;
+}
+
+.block1 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 35%;
+    display: inline-block;
+}
+
+.block1 h2 {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.block1 p {
+    font-size: calc(6px + (12 - 6) * ((100vw - 300px) / (1600 - 300)));
+    text-align: justify;
+}
+
+.button {
+    margin: 30px 20px 20px 0;
+    padding: 8px 12px;
+    text-transform: capitalize;
+    color: var(--lighttext);
+    background-image: linear-gradient(var(--buttontop), var(--buttonbottom));
+    border-radius: 5px;
+}
+
+.block2 {
+    display: inline;
+}
+
+.landing-img {
+    position: absolute;
+    right: 0;
+    width: 42vw;
+    height: auto;
+    display: inline;
+}
+
+.section2 {
+    background-color: var(--section2);
+}
+
+.section2 .inner {
+    padding: 40px 0;
+    position: relative;
+}
+
+.section2 img {
+    margin-bottom: -10px;
+    width: 3vw;
+    height: auto;
+}
+
+.section2 h2 {
+    font-size: calc(15px + (27 - 15) * ((100vw - 300px) / (1600 - 300)));
+    display: inline;
+}
+
+.section2 p {
+    font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+    text-align: justify;
+    color: var(--midtext);
+}
+
+.block3 {
+    width: 30%;
+    display: inline-block;
+}
+
+.block4 {
+    position: absolute;
+    left: 355px;
+    width: 30%;
+    display: inline-block;
+}
+
+.block5 {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: inline-block;
+}
+
+.section3 {
+    background-color: var(--section3);
+}
+
+.section3 .inner {
+    position: relative;
+}
+
+.block6 {
+    width: 50%;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.block6 h2 {
+    font-size: calc(15px + (27 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.product {
+    margin-left: -20px;
+    display: inline;
+}
+
+.product img {
+    margin: 20px 40px 20px 20px;
+    width: 13vw;
+    height: auto;
+    border: 8px solid var(--productborder);
+    box-shadow: 0 6px 6px #9C9B9B;
+}
+
+.aside {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 45%;
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+
+.aside-text {
+    font-size: calc(8px + (17 - 8) * ((100vw - 300px) / (1600 - 300)));
+    text-align: justify;
+    color: var(--midtext);
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--darktext);
+}
+/* close main */
+
+/* footer rules */
+.footer {
+    height: 9vh;
+    font-family: var(--maintext);
+    color: var(--lighttext);
+    background-color: var(--prim);
+}
+
+.footer .inner {
+    position: relative;
+}
+
+.colophon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 50%;
+    display: inline-block;
+}
+
+.colophon-text {
+    font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.footer-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* close footer */
